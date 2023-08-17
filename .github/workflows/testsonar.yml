@@ -8,5 +8,7 @@ jobs:
     uses: ryelduit/testworkflow/.github/workflows/blank.yml@main
     with:
       repocheckout: ${{ github.repository }}
+    secrets:
+      sonartoken: ${{ secrets.SONAR_TOKEN }}
 
       
