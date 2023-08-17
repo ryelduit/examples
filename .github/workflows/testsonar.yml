@@ -15,7 +15,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: ${{ github.workspace }}
+          projectBaseDir: "cli"
           args: >
             -Dsonar.organization=testorg-yrk
             -Dsonar.projectKey=testorg-yrk
