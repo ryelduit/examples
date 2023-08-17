@@ -11,5 +11,6 @@ jobs:
       #projdir: cloud
     secrets:
       sonartoken: ${{ secrets.SONAR_TOKEN }}
+      
 
       
