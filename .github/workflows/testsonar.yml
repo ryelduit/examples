@@ -5,20 +5,6 @@ on:
       - testb1
 jobs:
   sonarscan:
-    runs-on: "ubuntu-latest"
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: sonarcloud
-        uses: sonarsource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          projectBaseDir: "cli"
-          args: >
-            -Dsonar.organization=testorg-yrk
-            -Dsonar.projectKey=testorg-yrk
-            -D=coverage.xml
-            -Dsonar.verbos=true
-            -Dsonar.projectDescription=${{ github.repository_id }}
+    uses: ryelduti/github-workflows/.github/workflows/blank.yml@main
+    with:
+      repocheckout: ${{ github.repository }}
