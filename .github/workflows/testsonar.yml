@@ -2,13 +2,13 @@ name: SonarScan
 on:
   push:
     branches:
-      - testb1
+      - testb2
 jobs:
   sonarscan:
     uses: ryelduit/testworkflow/.github/workflows/blank.yml@main
     with:
       repocheckout: ${{ github.repository }}
-      projdir: applications
+      projdir: cloud
     secrets:
       sonartoken: ${{ secrets.SONAR_TOKEN }}
       
