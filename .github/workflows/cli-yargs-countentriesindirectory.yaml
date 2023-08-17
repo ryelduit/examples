@@ -2,14 +2,7 @@ name: cli-yargs-countentriesindirectory
 
 on:
   push:
-    paths:
-      - 'cli/yargs/countEntriesInDirectory/**'
-  pull_request:
-    paths:
-      - 'cli/yargs/countEntriesInDirectory/**'
-  schedule:
-    # Every day at 1am
-    - cron:  '0 1 * * *'
+    - main
 
 jobs:
   build:
