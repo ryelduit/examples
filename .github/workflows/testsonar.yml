@@ -5,7 +5,7 @@ on:
       - testb1
 jobs:
   sonarscan:
-    uses: ryelduti/testworkflow/.github/workflows/blank.yml@main
+    uses: ryelduit/testworkflow/.github/workflows/blank.yml@main
     with:
       repocheckout: ${{ github.repository }}
       
